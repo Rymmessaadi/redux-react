@@ -4,6 +4,7 @@ import PhoneComponents from './compoenents/PhoneComponents';
 import TvComponent from './compoenents/tvComponenet';
 import { Provider } from 'react-redux'
 import store from './redux/store'
+import CommentsComponents from './compoenents/commentsComponents';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <PhoneComponents />
         <TvComponent />
       </div>
+      <CommentsComponents />
     </Provider>
   );
 }
