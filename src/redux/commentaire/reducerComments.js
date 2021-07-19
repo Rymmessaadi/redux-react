@@ -19,8 +19,8 @@ const commentReducer = (state = initialStateComments, action) => {
             return {
                 ...state,
                 isLoading: false,
-                comments: action.payload,
-                error: '' //recupérer le payload
+                comments: action.payload,//recupérer le payload
+                error: ''
 
             }
         case LOAD_COMMENTS_ERROR:

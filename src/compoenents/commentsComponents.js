@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 import { apiCall } from '../redux/commentaire/actionComments'
 
 const CommentsComponents = ({ apiData, apiComment }) => {
-    //console.log(apiData)
+    console.log(apiData.comments)
 
-    useEffect(() => {
+    useEffect(() => { //au moment de lancement de component
         apiComment()
 
 
@@ -22,7 +22,7 @@ const CommentsComponents = ({ apiData, apiComment }) => {
                 apiData.comments.map(comment => {
                     return (
                         <div key={comment.id} className="comments">
-                            <p>{comment.body}</p>
+                            <p>{comment.name}</p>
                         </div>
                     )
                 })
